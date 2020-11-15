@@ -149,7 +149,7 @@ spec:
       serviceAccountName: hadoop-master
       containers:
       - name: hadoop-master
-        image: eiswar/hadoop:3.1.2
+        image: quay.io/fcobos/hadoop:3.3.0
         command: ["/usr/local/hadoop/sbin/bootstrap.sh"]
         args: ["master"]
         imagePullPolicy: IfNotPresent
@@ -179,7 +179,7 @@ spec:
       serviceAccountName: hadoop-master
       containers:
       - name: hadoop-worker
-        image: eiswar/hadoop:3.1.2
+        image: quay.io/fcobos/hadoop:3.3.0
         command: ["/usr/local/hadoop/sbin/bootstrap.sh"]
         args: ["worker"]
         volumeMounts:
